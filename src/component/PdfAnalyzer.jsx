@@ -61,6 +61,10 @@ Partita IVA : 12423543667`);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+
+        setTimeout(()=>{
+            window.location.reload();
+        },500);
     };
 
 
