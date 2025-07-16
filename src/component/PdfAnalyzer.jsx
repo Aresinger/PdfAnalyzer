@@ -23,14 +23,14 @@ Partita IVA : 12423543667`);
     const [logoFile, setLogoFile] = useState(null);
 
 
-    const handleLogoUpload = (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            const img = new Image();
-            img.src = URL.createObjectURL(file);
-            img.onload = () => setNewLogo(img);
-        }
-    };
+    // const handleLogoUpload = (event) => {
+    //     const file = event.target.files[0];
+    //     if (file) {
+    //         const img = new Image();
+    //         img.src = URL.createObjectURL(file);
+    //         img.onload = () => setNewLogo(img);
+    //     }
+    // };
 
     const downloadPdf = async () => {
         if (pdfPages.length === 0) return;
